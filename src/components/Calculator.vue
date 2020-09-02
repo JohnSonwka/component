@@ -9,16 +9,16 @@
     <div @click='clear' class="btn">AC</div>
     <div @click='clear' class="btn">C</div>
     <div class="btn operators" @click='del' >Del</div>
-    <div @click='e' class="btn">e</div>
+    <div class="btn">e</div>
     <div @click="square" class="btn">nCr</div>
     <div @click='sign' class="btn">n!</div>
     <div @click='divide' class="btn">nPr</div>
-    <div @click="percent" class="btn">10</div>
-    <div @click='clear' class="btn">Xy</div>
+    <div @click="percent" class="btn">10<sup>x</sup></div>
+    <div @click='clear' class="btn">X<sup>y</sup></div>
     <div @click='clear' class="btn">dd</div>
-    <div class="btn" @click='Squard' >Sqr</div>
+    <div class="btn" >&#8730;</div>
     <div @click='inverse' class="btn">1/X</div>
-    <div @click="square" class="btn">X 2</div>
+    <div @click="square" class="btn">X<sup>2</sup></div>
     <div @click='sign' class="btn">+/-</div>
     <div @click='divide' class="btn operators">/</div>
     <div @click="value(7)" class="btn">7</div>
@@ -63,7 +63,7 @@ export default {
       this.signed = ''
     },
     del () {
-      this.current = this.current.slice(1)
+      this.current = this.current.substr(0, this.current.length - 1)
     },
     inverse () {
       this.current = 1 / this.current
