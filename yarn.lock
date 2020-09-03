@@ -2540,7 +2540,7 @@ browserify-sign@^4.0.0:
     browserify-rsa "^4.0.1"
     create-hash "^1.2.0"
     create-hmac "^1.1.7"
-    elliptic "^6.5.2"
+    elliptic "^6.5.3"
     inherits "^2.0.4"
     parse-asn1 "^5.1.5"
     readable-stream "^3.6.0"
@@ -3287,8 +3287,8 @@ copy-webpack-plugin@^5.1.1:
     normalize-path "^3.0.0"
     p-limit "^2.2.1"
     schema-utils "^1.0.0"
-    serialize-javascript "^2.1.2"
-    webpack-log "^2.0.0"
+    serialize-javascript "^3.1.0"
+    webpack-log "^3.1.0"
 
 core-js-compat@^3.6.2, core-js-compat@^3.6.5:
   version "3.6.5"
@@ -3329,7 +3329,7 @@ create-ecdh@^4.0.0:
   integrity sha1-yREbbzMEXEaX8UR4f5JUzcd8Rf8=
   dependencies:
     bn.js "^4.1.0"
-    elliptic "^6.0.0"
+    elliptic "^6.5.3"
 
 create-hash@^1.1.0, create-hash@^1.1.2, create-hash@^1.2.0:
   version "1.2.0"
@@ -4069,8 +4069,8 @@ elegant-spinner@^1.0.1:
   resolved "https://registry.npm.taobao.org/elegant-spinner/download/elegant-spinner-1.0.1.tgz#db043521c95d7e303fd8f345bedc3349cfb0729e"
   integrity sha1-2wQ1IcldfjA/2PNFvtwzSc+wcp4=
 
-elliptic@^6.0.0, elliptic@^6.5.2:
-  version "6.5.2"
+elliptic@^6.5.3, elliptic@^6.5.3:
+  version "6.5.3"
   resolved "https://registry.npm.taobao.org/elliptic/download/elliptic-6.5.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felliptic%2Fdownload%2Felliptic-6.5.2.tgz#05c5678d7173c049d8ca433552224a495d0e3762"
   integrity sha1-BcVnjXFzwEnYykM1UiJKSV0ON2I=
   dependencies:
@@ -4235,7 +4235,7 @@ eslint-import-resolver-webpack@^0.12.1:
     find-root "^1.1.0"
     has "^1.0.3"
     interpret "^1.2.0"
-    lodash "^4.17.15"
+    lodash "^4.17.19"
     node-libs-browser "^1.0.0 || ^2.0.0"
     resolve "^1.13.1"
     semver "^5.7.1"
@@ -4387,7 +4387,7 @@ eslint@^6.7.2:
     js-yaml "^3.13.1"
     json-stable-stringify-without-jsonify "^1.0.1"
     levn "^0.3.0"
-    lodash "^4.17.14"
+    lodash "^4.17.19"
     minimatch "^3.0.4"
     mkdirp "^0.5.1"
     natural-compare "^1.4.0"
@@ -5301,7 +5301,7 @@ globule@^1.0.0:
   integrity sha1-kKJTOPIrf761J87mPGKa6nVNM7k=
   dependencies:
     glob "~7.1.1"
-    lodash "~4.17.12"
+    lodash "~4.17.19"
     minimatch "~3.0.2"
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.2:
@@ -5533,7 +5533,7 @@ html-webpack-plugin@^3.2.0:
   dependencies:
     html-minifier "^3.2.3"
     loader-utils "^0.2.16"
-    lodash "^4.17.3"
+    lodash "^4.17.19"
     pretty-error "^2.0.2"
     tapable "^1.0.0"
     toposort "^1.0.0"
@@ -5600,7 +5600,7 @@ http-proxy-middleware@0.19.1:
   dependencies:
     http-proxy "^1.17.0"
     is-glob "^4.0.0"
-    lodash "^4.17.11"
+    lodash "^4.17.19"
     micromatch "^3.1.10"
 
 http-proxy@^1.17.0:
@@ -5784,7 +5784,7 @@ inquirer@^7.0.0, inquirer@^7.1.0:
     cli-width "^2.0.0"
     external-editor "^3.0.3"
     figures "^3.0.0"
-    lodash "^4.17.15"
+    lodash "^4.17.19"
     mute-stream "0.0.8"
     run-async "^2.4.0"
     rxjs "^6.5.3"
