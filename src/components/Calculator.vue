@@ -5,20 +5,20 @@
       <h5>{{signed}}{{current}}</h5>
       <h3>{{displayed || '0'}} </h3>
     </div>
+    <div @click='logarithm' class="btn">ln</div>
     <div @click="percent" class="btn">%</div>
     <div @click='clear' class="btn">AC</div>
-    <div @click='clear' class="btn">C</div>
     <div class="btn operators" @click='del' >Del</div>
-    <div class="btn">e</div>
+    <div @click="exponent" class="btn">e<sup>x</sup></div>
     <div @click="square" class="btn">nCr</div>
     <div @click='sign' class="btn">n!</div>
     <div @click='divide' class="btn">nPr</div>
     <div @click="percent" class="btn">10<sup>x</sup></div>
-    <div @click='clear' class="btn">X<sup>y</sup></div>
-    <div @click='clear' class="btn">dd</div>
+    <div @click="square" class="btn">x<sup>2</sup></div>
+    <div @click='clear' class="btn">x<sup>y</sup></div>
     <div class="btn" >&#8730;</div>
-    <div @click='inverse' class="btn">1/X</div>
-    <div @click="square" class="btn">X<sup>2</sup></div>
+    <div @click='inverse' class="btn">1/x</div>
+    <div @click='baseLog' class="btn">log<sub>x</sub>y</div>
     <div @click='sign' class="btn">+/-</div>
     <div @click='divide' class="btn operators">/</div>
     <div @click="value(7)" class="btn">7</div>
@@ -43,7 +43,7 @@
 export default {
   data () {
     return {
-      previous: '',
+      previous: '0',
       current: '',
       operatorClicked: false,
       operator: null,
@@ -52,6 +52,10 @@ export default {
     }
   },
   methods: {
+    logarithm () {
+      this.previous = 'log'
+      this.displayed = `${Math.log(this.current)}`
+    },
     percent () {
       this.current = `${parseFloat(this.current) / 100}`
       this.displayed = this.current
@@ -64,6 +68,10 @@ export default {
     },
     del () {
       this.current = this.current.substr(0, this.current.length - 1)
+    },
+    // the exponent is in base e
+    exponent () {
+      this.displayed = `${Math.exp(this.current)}`
     },
     inverse () {
       this.current = 1 / this.current
@@ -115,7 +123,14 @@ export default {
       this.setPrevious()
       this.signed = '+'
     },
+    baseLog () {
+      this.operator = (a, b) => Math.log(a) / Math.log(b)
+      this.setPrevious()
+    },
     equal () {
+      if (this.current === '') {
+        return
+      }
       this.current = `${this.operator(
         parseFloat(this.previous),
         parseFloat(this.current)
