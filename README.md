@@ -1,4 +1,4 @@
-# jay
+# Scientific-Calculator-VueJS
 
 ## Project setup
 ```
