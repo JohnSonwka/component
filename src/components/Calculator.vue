@@ -145,14 +145,31 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .calculator{
+  width: 90%;
+  margin: 1%;
   padding: 5%;
   background: #999;
   border-radius: 5%;
-  font-size: 30px;
+  font-size: 24px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: (50px, auto);
 }
+@media screen and (min-width: 800px) {
+  .calculator{
+  width: 35%;
+  margin: auto;
+  padding: 2%;
+  background: #999;
+  border-radius: 5%;
+  font-size: 30px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: (50px, auto);
+  }
+}
+
 .display{
   padding: 2px;
   margin-bottom: 4px;
@@ -171,12 +188,12 @@ h3{
   grid-column: 1/3;
 }
 .btn{
-  padding: 5px;
+  padding: 2px;
   border-radius: 10px;
   margin: 1.5px;
   color: #eee;
   background-color: rgb(20, 7, 42);
-  border: 1px solid rgb(240, 240, 240);
+  border: 1px solid rgb(215, 206, 231);
 }
 .operators{
   background-color: rgb(255, 255, 255);
