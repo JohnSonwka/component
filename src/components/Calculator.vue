@@ -15,7 +15,7 @@
     <div @click='divide' class="btn">nPr</div>
     <div @click="percent" class="btn">10<sup>x</sup></div>
     <div @click="square" class="btn">x<sup>2</sup></div>
-    <div @click='clear' class="btn">x<sup>y</sup></div>
+    <div @click='power' class="btn">x<sup>y</sup></div>
     <div class="btn" >&#8730;</div>
     <div @click='inverse' class="btn">1/x</div>
     <div @click='baseLog' class="btn">log<sub>x</sub>y</div>
