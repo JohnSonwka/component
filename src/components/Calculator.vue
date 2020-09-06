@@ -11,7 +11,7 @@
     <div class="btn operators" @click='del' >Del</div>
     <div @click="exponent" class="btn">e<sup>x</sup></div>
     <div @click="square" class="btn">nCr</div>
-    <div @click='sign' class="btn">n!</div>
+    <div @click='factorial' class="btn">n!</div>
     <div @click='divide' class="btn">nPr</div>
     <div @click="percent" class="btn">10<sup>x</sup></div>
     <div @click="square" class="btn">x<sup>2</sup></div>
