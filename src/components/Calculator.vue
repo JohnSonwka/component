@@ -145,7 +145,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .calculator{
-  width: 90%;
+  width: 91%;
   margin: 1%;
   padding: 5%;
   background: #999;
